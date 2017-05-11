@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -52,6 +53,9 @@ namespace L2F
 			// Create a new SpriteBatch, which can be used to draw textures.
 			spriteBatch = new SpriteBatch(GraphicsDevice);
 
+			Services.AddService(typeof(SpriteBatch), spriteBatch);
+			Services.AddService(typeof(ContentManager), Content);
+
 			// TODO: use this.Content to load your game content here
 		}
 
@@ -95,6 +99,8 @@ namespace L2F
 
 			// Debug print out all inputs
 			spriteBatch.DrawString(Content.Load<SpriteFont>("Basic"), ic.activates(), new Vector2(0, 600), Color.White);
+
+			new DebugDrawer().DrawLine(new Point(10, 10), new Point(Mouse.GetState().X, Mouse.GetState().Y), 3, Color.Red);
 
 		spriteBatch.End();
 

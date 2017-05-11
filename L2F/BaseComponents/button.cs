@@ -37,7 +37,6 @@ namespace L2F
 			state = 0;// set initial state to sleep
 			drawing = true;
 			this.clickedMethod = clickedMethod;
-
 			
 		}
 

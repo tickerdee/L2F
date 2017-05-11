@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BaseComponents\button.cs" />
     <Compile Include="BaseComponents\drawableComponent.cs" />
+    <Compile Include="BaseComponents\DebugDrawer.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Input\InputController.cs" />
     <Compile Include="Program.cs" />
