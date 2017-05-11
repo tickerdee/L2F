@@ -16,6 +16,7 @@ namespace L2F
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            //Temp
         }
 
         /// <summary>
