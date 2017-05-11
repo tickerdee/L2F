@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/2nd Desktop/Programming/C#/MonoGAME/L2F/L2F/Content/Basic.spritefont</SourceFile>
-  <SourceTime>2017-05-11T14:50:24.6786877-07:00</SourceTime>
-  <DestFile>D:/2nd Desktop/Programming/C#/MonoGAME/L2F/L2F/Content/bin/Windows/Basic.xnb</DestFile>
-  <DestTime>2017-05-11T14:50:32.0301082-07:00</DestTime>
+  <SourceFile>C:/Users/Dalton Ross/Documents/L2F/L2F/Content/Basic.spritefont</SourceFile>
+  <SourceTime>2017-05-11T16:30:41.6913094-07:00</SourceTime>
+  <DestFile>C:/Users/Dalton Ross/Documents/L2F/L2F/Content/bin/Windows/Basic.xnb</DestFile>
+  <DestTime>2017-05-11T16:36:26.3770115-07:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
-  <ImporterTime>2017-03-01T08:05:36-07:00</ImporterTime>
+  <ImporterTime>2016-03-29T23:36:08-07:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>
-  <ProcessorTime>2017-03-01T08:05:36-07:00</ProcessorTime>
-  <Parameters>
-    <Key>PremultiplyAlpha</Key>
-    <Value>True</Value>
-  </Parameters>
+  <ProcessorTime>2016-03-29T23:36:08-07:00</ProcessorTime>
   <Parameters>
     <Key>TextureFormat</Key>
     <Value>Compressed</Value>

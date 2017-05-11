@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace L2F
 {
+    // Daltons test to see if edits work
 	/// <summary>
 	/// This is the main type for your game.
 	/// </summary>
