@@ -94,14 +94,17 @@ namespace L2F
 		protected override void Draw(GameTime gameTime)
 		{
 			GraphicsDevice.Clear(Color.CornflowerBlue);
-			
+
 			// Our one and ONLY begin draw call
 		spriteBatch.Begin();
 
 			// Debug print out all inputs
 			spriteBatch.DrawString(Content.Load<SpriteFont>("Basic"), ic.activates(), new Vector2(0, 600), Color.White);
 
-			new DebugDrawer().DrawLine(new Point(10, 10), new Point(Mouse.GetState().X, Mouse.GetState().Y), 3, Color.Red);
+			new DebugDrawer().DrawLine(new Vector2(10, 10), new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 1, Color.Red);
+
+			new DebugDrawer().DrawCircle(new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 100, 1, Color.Blue);
+			//DrawCircle(Vector2 centerPoint, float radius, float thickness, Color color)
 
 		spriteBatch.End();
 
