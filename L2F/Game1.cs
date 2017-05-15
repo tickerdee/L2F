@@ -105,7 +105,7 @@ namespace L2F
 			
 			new DebugDrawer().DrawCircle(new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 500, 1, Color.Blue);
 
-			spriteBatch.End();
+		spriteBatch.End();
 
 			base.Draw(gameTime);
 		}
