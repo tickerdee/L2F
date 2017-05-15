@@ -100,13 +100,12 @@ namespace L2F
 
 			// Debug print out all inputs
 			spriteBatch.DrawString(Content.Load<SpriteFont>("Basic"), ic.activates(), new Vector2(0, 600), Color.White);
-
+			
 			new DebugDrawer().DrawLine(new Vector2(10, 10), new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 1, Color.Red);
+			
+			new DebugDrawer().DrawCircle(new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 500, 1, Color.Blue);
 
-			new DebugDrawer().DrawCircle(new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 100, 1, Color.Blue);
-			//DrawCircle(Vector2 centerPoint, float radius, float thickness, Color color)
-
-		spriteBatch.End();
+			spriteBatch.End();
 
 			base.Draw(gameTime);
 		}

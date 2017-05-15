@@ -20,15 +20,12 @@ namespace L2F
 			Vector2 distance;
 
 			// Clamp thickness to our min range
-			thickness = Math.Max(thickness, 2);
+			thickness = Math.Max(thickness, 1);
 			int halfThickness = (int)Math.Round(thickness / 2);
 
 			Rectangle renderBox;
-
-			// Make sure we draw the first rectangle at startPoint
-			renderBox = new Rectangle((int)(currentLoc.X - halfThickness), (int)(currentLoc.Y - halfThickness), halfThickness, halfThickness);
-			spriteBatch.Draw(Content.Load<Texture2D>("WhiteBox"), renderBox, color);
-
+			
+			// do while ensures we will draw at least one point (our start point)
 			do
 			{
 				// Calculate our current distance to ednpoint
@@ -36,18 +33,20 @@ namespace L2F
 				Vector2 direction = distance;
 				// Get just the direction toward endpoint
 				direction.Normalize();
+
+				renderBox = new Rectangle((int)(currentLoc.X - halfThickness), (int)(currentLoc.Y - halfThickness), (int)thickness, (int)thickness);
+				spriteBatch.Draw(Content.Load<Texture2D>("WhiteBox"), renderBox, color);
+
 				// Move our location toward the endpoint
 				currentLoc.X = direction.X + currentLoc.X;
 				currentLoc.Y = direction.Y + currentLoc.Y;
 
-				renderBox = new Rectangle((int)(currentLoc.X - halfThickness), (int)(currentLoc.Y - halfThickness), halfThickness, halfThickness);
-				spriteBatch.Draw(Content.Load<Texture2D>("WhiteBox"), renderBox, color);
-
+			// Using an epsilon of 0.5 inacurate yes... this suggests an issue with the Move currentLoc formula
 			} while (distance.Length() > 0.5f);
 
 			// Make sure we draw the last rectangle at endpoint
 			currentLoc = new Vector2(endPoint.X, endPoint.Y);
-			renderBox = new Rectangle((int)(currentLoc.X - halfThickness), (int)(currentLoc.Y - halfThickness), halfThickness, halfThickness);
+			renderBox = new Rectangle((int)(currentLoc.X - halfThickness), (int)(currentLoc.Y - halfThickness), (int)thickness, (int)thickness);
 			spriteBatch.Draw(Content.Load<Texture2D>("WhiteBox"), renderBox, color);
 		}
 
@@ -55,19 +54,24 @@ namespace L2F
 		{
 
 			double theta = 0;
-			thickness = Math.Max(thickness, 2);
-			int halfThickness = (int)Math.Round(thickness / 2);
+
+			// Clamp thickness to our min range
+			thickness = Math.Max(thickness, 1);
+			float halfThickness = thickness / 2;
 
 			Rectangle renderBox;
 
 			while (theta <= Math.PI*2)
 			{
-				theta += (Math.PI * 2) / 800;
+				// Keep our ammount of steps in ratio with how large the circle is
+				theta += (Math.PI * 2) / (radius * 8);
 
+				// Sin(t)= y/r so y= Sin(t)*r and then we add our center point
 				double y = (Math.Sin(theta) * radius) + centerPoint.Y;
+				// Cos(t)= x/r so x= Cos(t)*r and then we add our center point
 				double x = (Math.Cos(theta) * radius) + centerPoint.X;
 
-				renderBox = new Rectangle((int)(x - halfThickness), (int)(y - halfThickness), halfThickness, halfThickness);
+				renderBox = new Rectangle((int)(x - halfThickness), (int)(y - halfThickness), (int)thickness, (int)thickness);
 				spriteBatch.Draw(Content.Load<Texture2D>("WhiteBox"), renderBox, color);
 			}
 
