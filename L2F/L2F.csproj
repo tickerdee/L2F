@@ -42,6 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BaseComponents\button.cs" />
+    <Compile Include="BaseComponents\Camera.cs" />
     <Compile Include="BaseComponents\drawableComponent.cs" />
     <Compile Include="BaseComponents\DebugDrawer.cs" />
     <Compile Include="Game1.cs" />

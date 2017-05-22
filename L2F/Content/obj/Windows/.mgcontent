@@ -4,7 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/2nd Desktop/Programming/C#/MonoGAME/L2F/L2F/Content/Basic.spritefont</File>
-    <File>D:/2nd Desktop/Programming/C#/MonoGAME/L2F/L2F/Content/WhiteBox.png</File>
+    <File>X:/L2F/L2F/Content/Basic.spritefont</File>
+    <File>X:/L2F/L2F/Content/WhiteBox.png</File>
+    <File>X:/L2F/L2F/Content/TestBackground.jpg</File>
   </SourceFiles>
 </SourceFileCollection>

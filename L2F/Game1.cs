@@ -5,7 +5,6 @@ using Microsoft.Xna.Framework.Input;
 
 namespace L2F
 {
-    // Daltons test to see if edits work
 	/// <summary>
 	/// This is the main type for your game.
 	/// </summary>
@@ -13,6 +12,10 @@ namespace L2F
 	{
 		GraphicsDeviceManager graphics;
 		SpriteBatch spriteBatch;
+
+        //camera Variables
+        Camera camera;
+        Vector2 BackgroundPostion= new Vector2(0,0);
 
 		// The input controller for all inputs
 		InputController ic;
@@ -38,7 +41,9 @@ namespace L2F
 		/// </summary>
 		protected override void Initialize()
 		{
-			// TODO: Add your initialization logic here
+            // TODO: Add your initialization logic here
+
+            camera = new Camera(GraphicsDevice.Viewport);
 
 			ic = InputController.getInstance();
 
@@ -84,6 +89,8 @@ namespace L2F
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || ic.activeAtAll(new inputObj((int)InputController.nonJoyTypes.keyboard, "Escape", 1)) > 0)
 				Exit();
 
+            camera.update(gameTime);
+
 			base.Update(gameTime);
 		}
 
@@ -96,7 +103,7 @@ namespace L2F
 			GraphicsDevice.Clear(Color.CornflowerBlue);
 
 			// Our one and ONLY begin draw call
-		spriteBatch.Begin();
+		spriteBatch.Begin(SpriteSortMode.Deferred,BlendState.AlphaBlend,null,null,null,null,camera.transform);
 
 			// Debug print out all inputs
 			spriteBatch.DrawString(Content.Load<SpriteFont>("Basic"), ic.activates(), new Vector2(0, 600), Color.White);
@@ -104,6 +111,9 @@ namespace L2F
 			new DebugDrawer().DrawLine(new Vector2(10, 10), new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 1, Color.Red);
 			
 			new DebugDrawer().DrawCircle(new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 500, 1, Color.Blue);
+
+            //TODO replace TestBackground with actual background image
+            spriteBatch.Draw(Content.Load<Texture2D>("TestBackground"), BackgroundPostion, Color.White);
 
 		spriteBatch.End();
 

@@ -79,3 +79,34 @@ C:\Users\Dalton Ross\Documents\L2F\L2F\bin\Windows\x86\Debug\SharpDX.Direct3D9.x
 C:\Users\Dalton Ross\Documents\L2F\L2F\obj\x86\Debug\L2F.csprojResolveAssemblyReference.cache
 C:\Users\Dalton Ross\Documents\L2F\L2F\obj\x86\Debug\L2F.exe
 C:\Users\Dalton Ross\Documents\L2F\L2F\obj\x86\Debug\L2F.pdb
+X:\L2F\L2F\obj\x86\Debug\L2F.exe
+X:\L2F\L2F\obj\x86\Debug\L2F.pdb
+X:\L2F\L2F\obj\x86\Debug\L2F.csprojResolveAssemblyReference.cache
+X:\L2F\L2F\bin\Windows\x86\Debug\Content\Basic.xnb
+X:\L2F\L2F\bin\Windows\x86\Debug\Content\WhiteBox.xnb
+X:\L2F\L2F\bin\Windows\x86\Debug\L2F.exe
+X:\L2F\L2F\bin\Windows\x86\Debug\L2F.pdb
+X:\L2F\L2F\bin\Windows\x86\Debug\MonoGame.Framework.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SlimDX.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.XInput.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.RawInput.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.Direct3D9.dll
+X:\L2F\L2F\bin\Windows\x86\Debug\MonoGame.Framework.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SlimDX.pdb
+X:\L2F\L2F\bin\Windows\x86\Debug\SlimDX.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.XInput.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.RawInput.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\SharpDX.Direct3D9.xml
+X:\L2F\L2F\bin\Windows\x86\Debug\Content\TestBackground.xnb
