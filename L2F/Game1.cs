@@ -17,8 +17,11 @@ namespace L2F
         Camera camera;
         Vector2 BackgroundPostion= new Vector2(0,0);
 
-		// The input controller for all inputs
-		InputController ic;
+        //projectile variables
+        Projectile projectile; // declaration of Our Projectile
+
+        // The input controller for all inputs
+        InputController ic;
 
 		public Game1()
 		{
@@ -89,7 +92,7 @@ namespace L2F
 			if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || ic.activeAtAll(new inputObj((int)InputController.nonJoyTypes.keyboard, "Escape", 1)) > 0)
 				Exit();
 
-            camera.update(gameTime);
+            camera.update(gameTime, new Vector2(Mouse.GetState().X - 400, Mouse.GetState().Y - 400), new Vector2(1,1));
 
 			base.Update(gameTime);
 		}

@@ -21,11 +21,11 @@ namespace L2F
             view = newView;
         }
 
-        public void update(GameTime GameTime)
+        public void update(GameTime GameTime, Vector2 CameraLocation, Vector2 Scale)
         {
             //TODO: replace mouse location with actual sprite data
-            center = new Vector2(Mouse.GetState().X - 400, Mouse.GetState().Y - 400);
-            transform = Matrix.CreateScale(new Vector3(1, 1, 0)) * Matrix.CreateTranslation(new Vector3(-center.X, -center.Y, 0));
+            center = CameraLocation;
+            transform = Matrix.CreateScale(new Vector3(Scale.X, Scale.Y, 0)) * Matrix.CreateTranslation(new Vector3(-center.X, -center.Y, 0));
         }
     }
 }

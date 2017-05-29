@@ -45,6 +45,7 @@
     <Compile Include="BaseComponents\Camera.cs" />
     <Compile Include="BaseComponents\drawableComponent.cs" />
     <Compile Include="BaseComponents\DebugDrawer.cs" />
+    <Compile Include="BaseComponents\Projectile.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Input\InputController.cs" />
     <Compile Include="Program.cs" />
