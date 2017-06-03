@@ -28,12 +28,6 @@ namespace L2F
 			get { return WorldPosition.Y; }
 			set { WorldPosition.Y = value; }
 		}
-
-		public static explicit operator CollisionBoundsBase(SphereCollisionObject v)
-		{
-			//return SphereCollisionObject
-			throw new NotImplementedException();
-		}
 	}
 
 	interface CollisionObjectInterface

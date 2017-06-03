@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>D:/2nd Desktop/Programming/C#/MonoGAME/L2F/L2F/Content/WhiteBox.png</SourceFile>
-  <SourceTime>2017-05-11T15:09:22.3747602-07:00</SourceTime>
-  <DestFile>D:/2nd Desktop/Programming/C#/MonoGAME/L2F/L2F/Content/bin/Windows/WhiteBox.xnb</DestFile>
-  <DestTime>2017-06-02T18:10:48.0663361-07:00</DestTime>
+  <SourceFile>D:/2nd Desktop/Programming/C#/MonoGAME/L2F/L2F/Content/TestBackground.jpg</SourceFile>
+  <SourceTime>2017-06-02T18:05:23.0307451-07:00</SourceTime>
+  <DestFile>D:/2nd Desktop/Programming/C#/MonoGAME/L2F/L2F/Content/bin/Windows/TestBackground.xnb</DestFile>
+  <DestTime>2017-06-02T18:10:48.0723364-07:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2017-03-01T08:05:36-07:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

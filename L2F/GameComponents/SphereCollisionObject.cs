@@ -15,7 +15,7 @@ namespace L2F
 
 	class SphereCollisionObject : CollisionObjectInterface
 	{
-		SphereCollisionBounds bounds;
+		public SphereCollisionBounds bounds;
 
 		public SphereCollisionObject(Vector2 WorldPosition, float radius)
 		{
