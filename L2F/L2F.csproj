@@ -45,6 +45,9 @@
     <Compile Include="BaseComponents\drawableComponent.cs" />
     <Compile Include="BaseComponents\DebugDrawer.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="GameComponents\CollisionObjectInterface.cs" />
+    <Compile Include="GameComponents\SphereCollisionObject.cs" />
+    <Compile Include="GameComponents\ConstantCollisionDetectionInterface.cs" />
     <Compile Include="Input\InputController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

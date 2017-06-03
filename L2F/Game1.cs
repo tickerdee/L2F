@@ -100,12 +100,18 @@ namespace L2F
 
 			// Debug print out all inputs
 			spriteBatch.DrawString(Content.Load<SpriteFont>("Basic"), ic.activates(), new Vector2(0, 600), Color.White);
-			
-			new DebugDrawer().DrawLine(new Vector2(10, 10), new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 1, Color.Red);
-			
-			new DebugDrawer().DrawCircle(new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 500, 1, Color.Blue);
+			SphereCollisionObject temp = new SphereCollisionObject(new Vector2(100, 100), 20);
+			SphereCollisionObject temp2 = new SphereCollisionObject(new Vector2(120, 120), 20);
+			temp.CheckOverlap((CollisionBoundsBase)(temp2));
 
-		spriteBatch.End();
+			new DebugDrawer().DrawCircle(temp.GetWorldPosition(), temp.GetWideRadius(), 1, Color.Blue);
+			new DebugDrawer().DrawCircle(temp2.GetWorldPosition(), temp2.GetWideRadius(), 1, Color.Blue);
+
+			//new DebugDrawer().DrawLine(new Vector2(10, 10), new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 1, Color.Red);
+
+			//new DebugDrawer().DrawCircle(new Vector2(Mouse.GetState().X, Mouse.GetState().Y), 500, 1, Color.Blue);
+
+			spriteBatch.End();
 
 			base.Draw(gameTime);
 		}

@@ -74,7 +74,6 @@ namespace L2F
 				renderBox = new Rectangle((int)(x - halfThickness), (int)(y - halfThickness), (int)thickness, (int)thickness);
 				spriteBatch.Draw(Content.Load<Texture2D>("WhiteBox"), renderBox, color);
 			}
-
 		}
 	}// End Clas
 }
