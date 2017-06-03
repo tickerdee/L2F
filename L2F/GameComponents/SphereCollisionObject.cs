@@ -40,7 +40,7 @@ namespace L2F
 
 			if(checkBounds is SphereCollisionBounds)
 			{
-				bounds = (SphereCollisionBounds)(checkBounds);
+				//tempBounds = (SphereCollisionBounds)(checkBounds);
 
 				double dist = Math.Sqrt(Math.Pow(bounds.X - checkBounds.X, 2) + Math.Pow(bounds.Y - checkBounds.Y, 2));
 
